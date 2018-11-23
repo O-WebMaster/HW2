@@ -1,29 +1,34 @@
 <html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="main.CSS">
+</head>
 <body>
-<h1>Вакансия: Junior Frontend Developer</h1>
+    
+<div class="test3">
+<p> <h1>Вакансия: Junior Frontend Developer</h1> </p>
 <hr>
-    <div>
+    <div class="test2">
             <div style="display: inline-block;"> <img src="Iam.jpg" alt="Trulli" width="112" height=126"> </div>
-            <div style="display: inline-block; vertical-align: top">
+            <div class="test1" style="display: inline-block; vertical-align: top">
                  Имя: Олейник Олег Евгеньевич
-                <br> <a href="https://github.com/O-WebMaster/HW2.git">Ссылка на репозиторий в GitHub</a>
+                <br> <a href="https://github.com/O-WebMaster/HW2.git" target="_blank">Ссылка на репозиторий в GitHub</a>
                 <br> Опыт работы: нет
             </div>                
     </div>
 
 <hr>
-<br> <label for="Дата собеседования"> Дата собеседования:</label> 
-<input id="Дата собеседования" type="date">
+<br> <label for="interview-date"> Дата собеседования:</label> 
+<input id="interview-date" type="date">
 <hr>
 
 <p>
-    <label> Уровень Английского
-     <input type="radio" name="Мой инглиш"> Плохо
-     <input type="radio" name="Мой инглиш"> Средне
-     <input type="radio" name="Мой инглиш"> Хорошо
-     <input type="radio" name="Мой инглиш"> Превосходно
-    </label>
-
+    Уровень Английского
+     <label><input type="radio" name="English level"> Плохо</label>
+     <label><input type="radio" name="English level"> Средне</label>
+     <label><input type="radio" name="English level"> Хорошо</label>
+    <label><input type="radio" name="English level"> Превосходно</label>
+  
 <ul>Ключевые навыки:
      <li>HTML</li>
      <li>CSS/LESS</li>
@@ -33,8 +38,8 @@
 
 <p><input  type="text" placeholder="Введите навык"> <button> Добавить в список </button></p>
 
-<label for="Коммуникабельность">Комуникабельность:</label>
-<select name="Коммуникабельн" id="Коммуникабельность">
+<label for="sociability">Комуникабельность:</label>
+<select name="sociability" id="sociability">
     <option> Выберети значение</option>
     <option>Низкий уровень</option>
     <option>Средний уровень</option>
@@ -42,8 +47,8 @@
 </select>
 
 
-<p><label for="ЗП">Желаемая З/П:</label>
-<input type="text" placeholder="Введите значение...">
+<p><label for="Money">Желаемая З/П:</label>
+<input type="number" placeholder="Введите значение...">
 
 <p>Подходит по критериям: <p>
  <input type="checkbox"> Знание английского <input type="checkbox"> Оклад <input type="checkbox"> Навыки  <input type="checkbox"> Просто красавчик
@@ -56,8 +61,8 @@
             td {border: 1px solid black; padding: 10px}     
         </style>
         
-        <p>Образование курсы и т.п
-        <table>
+        <p class="test4"> Образование курсы и т.п </p>
+        <table class="test5">
             <tr>
               <th>#</th>
               <th>Сроки обучения</th> 
@@ -80,7 +85,7 @@
             </tr>
           </table>
           </table>
-
+</div>
 
 
 
