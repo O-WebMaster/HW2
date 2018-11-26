@@ -1,23 +1,51 @@
-.test1 {
+/*Подгрузка шрифта c https://fonts.google.com - начало: */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+/*Подгрузка шрифта - окончание */
+
+/* Задаём шрифт "Лобстер", ранее подгруженный нашему классу "test4-8": */
+.test4-8 {
+  font-family: 'Lobster', cursive;
+}
+/* Задаём шрифт "Лобстер", ранее подгруженный нашему классу "test4-8", 
+параметры "font-family: 'Lobster', cursive;" взяты с  https://fonts.google.com/ */
+
+.test1 { /* "К1" изменияем блок фамилия / ссылка в гит  / опыт работы */
+  display: inline-block; /* для размещения двух блоков рядышком  */
+  vertical-align: top; /* смена положения блока */
   margin: 18px 60px;
   border: 5px;
   padding: 15px;
-  width: 225;
-  height: 50;
+  width: 244px;
+  height: 50px;
   border-style: solid;
   border-color: rgb(255, 0, 0);
   border-radius: 50px;
   background: rgb(0, 255, 221);
   font-size: 16px;
-  text-align: left
+  font-weight: 700;
+  text-align: left; 
+ } /*конец "К1" */
+
+ .test1 a { /* "К2" задаем стиль тексту "сслка на гит" до наведения курсора*/
+    font-weight: 100;
+    color: azure;
+  } /* конец К2 */
+
+  .test1 a:hover { /* "К3" задаем стиль текста "ссылка на гит" при наведении мишки */
+    font-weight: 900;
+    color: red;
+  } /* конец К3*/
+
+ .test1a { 
+  display: inline-block; /* для размещения двух блоков рядышком  */
  }
 
  .test2 {
   margin: 0px;
   border: 3px;
   padding: 0px;
-  width: 594;
-  height: 126;
+  width: 594px;
+  height: 126px;
   }
 
   .test3 {
@@ -30,49 +58,71 @@
     } 
 
 
-
-    .test4 {
-      text-align: center;
-      font-size: 18px;
-      background: red;
-      padding: 5px;
-      width: 250px;
-      margin: 5px auto;
-      } 
-
-      .test5 {
-        text-align: center;
-        background: rgb(206, 241, 7);
-        margin: 5px auto;
-        } 
-
     h1 {
       text-align: center;
       color: blue;
       text-shadow: 2px 2px 2px rgba(49, 6, 117, 0.966);
+      margin: 20px auto;
       }
 
-#interview-date {
+.i-d {
    border-color: rgb(195, 0, 255);
    background: rgb(0, 255, 221);
    text-align: center;
    color: blue;
    }
 
+   .i-d:focus { /* снимаем стандартную гугл рамку с "инпутов" с классом "i-d" ПРИ ИХ ВЫБОРЕ (фокус) */
+    outline: none;
+   }
+
+
+
+
    ul {
      list-style-image: url(faq_list5_2.png);
-            }
+    }
             
             
-            p button {
-              text-align: center;
-              color: rgb(1, 1, 15);
-              text-shadow: 2px 2px 2px rgba(5, 64, 151, 0.616);
-              border-radius: 3px;
-              }
+    p button { /* "К4"настраиваем кнопку */
+    text-align: center;
+    color: rgb(1, 1, 15);
+    text-shadow: 2px 2px 2px rgba(5, 64, 151, 0.616);
+    box-shadow: 0px 0px 10px 5px rgb(247, 153, 153); /* 0 0 5px 2px */
+    margin: 5px;
+    padding: 5px 10px;
+    border: 3px; /* толщина гранцы */
+    border-style: solid; /* стиль границы, по умолчанию отсутствует */
+    background: linear-gradient(to right, rgb(165, 219, 121), rgb(11, 235, 197)); /* цвет фона + градиент с размытием с права на лево*/
+    border-radius: 10px;
+    } /* конец К4 */
 
 
+p button:hover { /*делаем кнопку "полупрозрачной" используя "opacity: 0.8" используя псевдокласс":hover" */
+opacity: 0.6;
+}
 
 
+table {border: 1px solid black; border-collapse: collapse;} /*Перенесли оформление таблицы из HTML в CSS*/
+th {border: 1px solid black; padding: 10px} /*Перенесли оформление "заголовочной ячейки" таблицы из HTML в CSS*/
+td {border: 1px solid black; padding: 10px} /*Перенесли оформление "ячейки вне заголовка" таблицы из HTML в CSS*/
 
-      interview date
+.test4 { /*оформление наименования таблицы */
+  text-align: center;
+  font-size: 18px;
+  background: red;
+  padding: 5px;
+  width: 250px;
+  margin: 5px auto;
+  } 
+
+  .test5 { /* оформление таблицы содержимого таблицы */
+    text-align: center;
+    background: rgb(206, 241, 7);
+    margin: 5px auto;
+    } 
+
+
+.test6:hover { /* меняем цвет фона строки при наведении мышью на любой элемент строки используя псевдокласс":hover" */
+  background:  blue
+} 
